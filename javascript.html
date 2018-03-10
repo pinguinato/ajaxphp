@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Document
+        </title>
+        <meta charset="utf-8"0>
+    </head>
+    <body>
+            
+            <script type="text/javascript">
+
+            function vehicle(theModel,theYear){
+                
+                var self = this;
+                
+                self.year = theYear;
+                self.model = theModel;
+
+                self.getVehicle = function(){
+                    return self.year + " " + self.model;
+                }
+
+                self.setVehicle = function(model,year){
+                    self.year = year;
+                    self.model = model;
+                }
+                self.printVehicle = function(){
+                    return self.getVehicle();
+                }
+            }
+
+            var test = new vehicle("Mercedes CLK","2010");
+
+            console.log(typeof(test));
+            
+            console.log(test.printVehicle());
+
+            alert(test.printVehicle());
+            
+
+
+        </script>
+            
+    </body>
+</html>
